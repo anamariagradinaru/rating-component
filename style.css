@@ -45,7 +45,8 @@ body {
     justify-content: center;
 }
 
-.content-container {
+.card1,
+.card2 {
     background-color: var(--dark-blue);
     height: 420px;
     width: 420px;
@@ -56,7 +57,12 @@ body {
     gap: 25px;
     border-radius: 10%;
 }
-.content-container h1 {
+.card1 h1 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+}
+.card2 h1 {
     font-size: 28px;
     color: #fff;
     font-weight: 700;
@@ -102,7 +108,7 @@ form {
     border: none;
     cursor: pointer;
 }
-.content-container p {
+.card1 p {
     color: var(--medium-gray);
     font-weight: 400;
     line-height: 24px;
@@ -122,4 +128,27 @@ form {
 .submit-button button:hover {
     background-color: white;
     color: var(--orange);
+}
+.card2 {
+    display: none;
+}
+.card2-rating {
+    width: 193px;
+    height: 32px;
+    background-color: #2c343e;
+    border-radius: 22.5px;
+}
+.card2-content {
+    text-align: center;
+}
+.card2-content p {
+    color: var(--light-grey);
+    line-height: 24px;
+}
+
+.card2-rating {
+    color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -13,10 +13,10 @@
 
 <body>
     <div class="container">
-        <div class="content-container">
+        <div class="card1">
             <div class="content">
                 <div class="content-img">
-                    <img src="/assets/Star.png" />
+                    <img src="/assets/card1-star.pngg" />
                 </div>
                 <h1>How did we go?</h1>
                 <p>
@@ -26,33 +26,48 @@
                     imporove our offering.
                 </p>
             </div>
-
             <div class="buttons-container">
-                <form>
+                <form id="rating">
                     <label for="1">
-                        <input type="radio" id="1" name="button" value="1" />
+                        <input type="radio" id="1" name="button" value="1" required />
                         <button>1</button>
                     </label>
                     <label for="2">
-                        <input type="radio" id="2" name="button" value="2" />
+                        <input type="radio" id="2" name="button" value="2" required />
                         <button>2</button>
                     </label>
                     <label for="3">
-                        <input type="radio" id="3" name="button" value="3">
+                        <input type="radio" id="3" name="button" value="3" required>
                         <button>3</button>
                     </label>
                     <label for="4">
-                        <input type="radio" id="4" name="button" value="4" />
+                        <input type="radio" id="4" name="button" value="4" required />
                         <button>4</button>
                     </label>
                     <label for="5">
-                        <input type="radio" id="5" name="button" value="5" />
+                        <input type="radio" id="5" name="button" value="5" required />
                         <button>5</button>
                     </label>
                 </form>
             </div>
             <div class="submit-button">
-                <button>S U B M I T</button>
+                <button form="rating" type="submit" id="submitButton">S U B M I T</button>
+            </div>
+        </div>
+        <div class="card2">
+            <img src="/assets/card2-image.png" />
+            <div class="card2-rating">
+                <p></p>
+            </div>
+            <div class="card2-content">
+                <h1>Thank you!</h1>
+                <p>
+                    We appreciate you taking the time to give a rating.</br> If you ever need more support, don t
+                    hesitate
+                    to
+                    </br>
+                    get in touch!
+                </p>
             </div>
         </div>
     </div>

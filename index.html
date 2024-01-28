@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet" />
     <title>Rating</title>
 </head>
 
@@ -12,27 +15,47 @@
     <div class="container">
         <div class="content-container">
             <div class="content">
+                <div class="content-img">
+                    <img src="/assets/Star.png" />
+                </div>
                 <h1>How did we go?</h1>
-                <p>Please let us know how we did with your support <br /> request. All feedback is appreciated to hel us
+                <p>
+                    Please let us know how we did with your support <br />
+                    request. All feedback is appreciated to hel us
                     <br />
                     imporove our offering.
                 </p>
             </div>
 
             <div class="buttons-container">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
+                <form>
+                    <label for="1">
+                        <input type="radio" id="1" name="button" value="1" />
+                        <button>1</button>
+                    </label>
+                    <label for="2">
+                        <input type="radio" id="2" name="button" value="2" />
+                        <button>2</button>
+                    </label>
+                    <label for="3">
+                        <input type="radio" id="3" name="button" value="3">
+                        <button>3</button>
+                    </label>
+                    <label for="4">
+                        <input type="radio" id="4" name="button" value="4" />
+                        <button>4</button>
+                    </label>
+                    <label for="5">
+                        <input type="radio" id="5" name="button" value="5" />
+                        <button>5</button>
+                    </label>
+                </form>
             </div>
             <div class="submit-button">
-                <button>SUBMIT</button>
+                <button>S U B M I T</button>
             </div>
-
         </div>
     </div>
-
     <script src="/app.js"></script>
 </body>
 

@@ -9,12 +9,14 @@
     --very-dark-color: #131518;
     --medium-gray: #7c8798;
     --orange: #fc7614;
+    --light-grey: #969fad;
 }
 
 body {
     background-color: var(--very-dark-color);
     width: 100vw;
     height: 100vh;
+    font-family: Overpass;
 }
 .container {
     display: flex;
@@ -22,6 +24,25 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+}
+.content p {
+    color: var(--light-grey);
+}
+.content img {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-img {
+    background-color: rgb(44, 52, 62);
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content-container {
@@ -38,6 +59,7 @@ body {
 .content-container h1 {
     font-size: 28px;
     color: #fff;
+    font-weight: 700;
 }
 
 .buttons-container {
@@ -49,19 +71,32 @@ body {
 .buttons-container button {
     color: var(--very-dark-color);
     background-color: #2c343e;
-    font-size: 15px;
+    font-size: 16px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: none;
+    font-weight: 700;
+    pointer-events: none;
+    transition: 0.2s all ease-in-out;
+}
+.buttons-container input {
     cursor: pointer;
-    font-weight: 600;
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+}
+form {
+    display: flex;
+
+    gap: 20px;
 }
 .submit-button button {
     width: 340px;
     height: 45px;
     background-color: var(--orange);
-    font-size: 15px;
+    font-size: 14px;
     color: #fff;
     border-radius: 20px;
     border: none;
@@ -69,10 +104,22 @@ body {
 }
 .content-container p {
     color: var(--medium-gray);
-    line-height: 22px;
+    font-weight: 400;
+    line-height: 24px;
 }
 .content {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    justify-content: center;
+}
+.buttons-container input[type='radio']:checked + button {
+    background-color: var(--orange); /* Change background color when checked */
+}
+.buttons-container input[type='radio']:hover + button {
+    background-color: var(--medium-gray);
+}
+.submit-button button:hover {
+    background-color: white;
+    color: var(--orange);
 }
